@@ -22,7 +22,7 @@ provider "dnsimple" {
 resource "dnsimple_record" "myrecord" {
   domain = "terraform.rocks"
   name = "robklg"
-  value = "${aws_instance.web.1.public_ip}"
+  value = "${aws_instance.web.0.public_ip}"
   type = "A"
   ttl = 3600
 }
