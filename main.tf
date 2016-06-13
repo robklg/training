@@ -43,7 +43,7 @@ resource "aws_instance" "web" {
   subnet_id = "subnet-99a58be2"
   vpc_security_group_ids = [ "sg-8e08dfe6" ]
 
-  count = "1"
+  count = "2"
 
   tags {
     Identity = "hashiconf-37693cfc748049e45d87b8c7d8b9aacd"
